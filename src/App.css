@@ -1,5 +1,9 @@
 .App {
+  border: 2px solid dodgerblue;
   text-align: center;
+  margin: 0 auto;
+  width: 800px;
+  height: 100vh;  
 }
 
 .App-logo {
@@ -30,4 +34,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.img-container {
+  border: 1px solid red;
+  width: 800px;
+  max-height: 60%;
+}
+
+.img-container img{
+  max-width: 100%;
+  max-height: 60%;
 }
