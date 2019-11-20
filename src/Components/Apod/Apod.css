@@ -1,0 +1,10 @@
+.img-container {
+  /* border: 1px solid red; */
+  width: 800px;
+  height: 10%;
+}
+
+.img-container img{
+  max-width: 100%;
+  
+}

@@ -1,10 +1,11 @@
 import React from "react";
+import './Title.css';
 
-const Title = props => {
-  console.log(props.date);
+const Title = ({ apodTitle }) => {
+  console.log(apodTitle);
   return (
-    <div>
-      <h1>{props.date}</h1>
+    <div className="header">
+      <h1>{apodTitle}</h1>
     </div>
   );
 };
