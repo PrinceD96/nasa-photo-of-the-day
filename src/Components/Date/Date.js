@@ -5,7 +5,7 @@ const Date = ({ apodDate }) => {
   console.log(apodDate);
   return (
     <div className="date-container">
-      <h3>{apodDate}</h3>
+      <h6>{apodDate}</h6>
     </div>
   );
 };

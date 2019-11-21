@@ -1,11 +1,9 @@
 .App {
-  border: 2px solid black;
-  background: lightcoral;
+  /* border: 2px solid black; */
   text-align: center;
   margin: 0 auto;
   width: 800px;
-  height: 100%;  
-  padding: 5px;
+  height: 100%;    
 }
 
 .App-logo {

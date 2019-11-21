@@ -4,6 +4,8 @@ import './Apod.css';
 import Title from '../Title/Title';
 import Description from '../Description/Description';
 import Date from '../Date/Date';
+import ApodSelector from '../Dropdown/Dropdown';
+import { Container, Row, Col, Card, CardImg, CardBody, Button } from 'reactstrap';
 
 const Apod = () => {
   const [apod, setApod] = useState([]);
@@ -18,14 +20,30 @@ const Apod = () => {
   }, []);
 
   return (
-    <div>
-      <Title apodTitle={apod.title} />
-      <div className="img-container">
-        <img src={apod.url} />
-      </div>
-      <Description apodDescription={apod.explanation} />
-      <Date apodDate={apod.date} />
-    </div>
+    // <div>
+    //   <Title apodTitle={apod.title} />
+    //   <div className="img-container">
+    //     <img src={apod.url} />
+    //   </div>
+    //   <Description apodDescription={apod.explanation} />
+    //   <Date apodDate={apod.date} />
+    // </div>
+    <Container >
+      <Row>
+        <Col>
+          <Card className='Card'>
+            <Title apodTitle={apod.title} />
+            <CardImg className="card__img" src={apod.url} />
+            <CardBody>
+              <Description apodDescription={apod.explanation} apodCopyright={apod.copyright} />
+              <Date apodDate={apod.date} />
+              {/* <Button color="primary">Next APOD</Button> */}
+              <ApodSelector></ApodSelector>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
